@@ -47,8 +47,6 @@ services:
         ports:
             - "8082:8080"
 
-volumes:
-    /mnt/repo/pypi:
-        external: true            
-
-    
+# volumes:
+#     /mnt/repo/pypi:
+#         external: true
