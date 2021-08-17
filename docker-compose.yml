@@ -67,7 +67,7 @@ services:
         image: pypiserver/pypiserver:latest
         volumes:
             - type: bind
-              source: /media/depot/repo/pypi/
+              source: /mnt/repo/pypi/
               target: /data/packages
         ports:
             - "8082:8080"
