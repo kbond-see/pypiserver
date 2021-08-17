@@ -43,7 +43,13 @@ services:
     pypiserver-local-packages:
         image: pypiserver/pypiserver:latest
         volumes:
+<<<<<<< HEAD
             - /mnt/repo/pypi:/data/packages
+=======
+            - type: bind
+              source: /mnt/repo/pypi/
+              target: /data/packages
+>>>>>>> 5faaa20f81c7c690d6d81d062512fcca9cbd3928
         ports:
             - "8082:8080"
 
