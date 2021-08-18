@@ -46,10 +46,6 @@ services:
             - type: bind
               source: ../../repo/pypi-repo
               target: /data/packages
-              read_only: true
+              # read_only: true
         ports:
             - "8082:8080"
-
-# volumes:
-#     /mnt/repo/pypi:
-#         external: true
